@@ -14,9 +14,5 @@ def word_count(sentence, word) -> int:
         return 0
 
 
-def word_count_two(sentence, word) -> int:
-    sentence = sentence.upper().split()
-    if word in sentence:
-        return sum([12 for x in sentence if x == word])
-    else:
-        return 0
+def count_them(word) -> int:
+    return len(word.split())

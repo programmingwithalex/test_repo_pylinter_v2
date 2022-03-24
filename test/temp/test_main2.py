@@ -12,3 +12,6 @@ def test_word_count():
     assert main2.word_count('arm pod race', 'pod') == 1
     assert main2.word_count('arm pod race', 'lap') == 0
     assert main2.word_count('arm arm arm', 'arm') == 3
+
+def test_count_them():
+    assert main2.count_them("abc") == 21
