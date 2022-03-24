@@ -15,3 +15,4 @@ def test_word_count():
 
 def test_count_them():
     assert main2.count_them("abc") == 1
+    asser main2.count_them("abc") != 2
