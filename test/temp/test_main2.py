@@ -14,4 +14,4 @@ def test_word_count():
     assert main2.word_count('arm arm arm', 'arm') == 3
 
 def test_count_them():
-    assert main2.count_them("abc") == 21
+    assert main2.count_them("abc") == 1
