@@ -11,10 +11,10 @@ Demonstration of how to incorporate continuous integration (CI) into a Python pr
 1. linting
 2. testing
 
-The linting is handled by a custom GitHub Action [`pylinters`](https://github.com/marketplace/actions/pylinters) written by myself. The testing is handled by pytest.
+The linting is handled by a custom GitHub Action [`pylinter`](https://github.com/marketplace/actions/pylinter) written by myself. The testing is handled by pytest.
 
 ## Contents
 
-* `.py` simplistic files to lint with the GitHub Action `pylinters` and test with `pytest`
+* `.py` simplistic files to lint with the GitHub Action `pylinter` and test with `pytest`
 * `tests/` directory which contains the various `pytest` tests to run
 * `requirements.txt` which contains the necessary packages to run the CI
