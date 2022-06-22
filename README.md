@@ -4,7 +4,7 @@ Copyright (c) 2021, [programmingwithalex](https://github.com/programmingwithalex
 
 ## Description
 
-This repo serves as a reference for the following [YouTube video](https://www.youtube.com/watch?v=rY-igT2N8zU&list=PL0dOL8Z7pG3J6t1pqRQiNarBGY-ZnIJcq&index=2).
+This repo serves as a reference for the following [YouTube video](https://www.youtube.com/watch?v=Ls6n3WZ_tyo&list=PLbn3jWIXv_ibMS6CFOKMZkOHimDB9xdU2&index=2).
 
 Demonstration of how to incorporate continuous integration (CI) into a Python project using:
 
