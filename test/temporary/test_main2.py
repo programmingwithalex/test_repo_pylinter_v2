@@ -1,5 +1,6 @@
-from temp import sub_and_word_count
 import pytest
+
+from temp import sub_and_word_count
 
 
 @pytest.mark.parametrize('x, y, expected',

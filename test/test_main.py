@@ -1,5 +1,6 @@
-import main
 import pytest
+
+import main
 
 
 def test_add():
