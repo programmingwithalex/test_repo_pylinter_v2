@@ -29,7 +29,7 @@ def test_to_sentence():
 @pytest.mark.parametrize('sentence, expected', [
             ('apple', 'Apple.'),
             ('apple trees', 'Apple trees.'),
-            ('Apple trees.', 'Apple trees'),
+            ('Apple trees.', 'Apple trees.'),
         ]
 )
 def test_sentence_parametrize(sentence, expected):
