@@ -1,4 +1,4 @@
-from temp import main2
+from temp import in_temp
 import pytest
 
 
@@ -10,7 +10,7 @@ import pytest
         (4.2, 3.9, 0)
     ])
 def test_sub_parametrize(x, y, expected):
-    assert main2.sub(x, y) == expected
+    assert in_temp.sub(x, y) == expected
 
 
 @pytest.mark.parametrize('sentence, word, expected_count',
@@ -20,5 +20,5 @@ def test_sub_parametrize(x, y, expected):
         ('arm arm arm', 'arm', 3),
     ])
 def test_word_count(sentence, word, expected_count):
-    assert main2.word_count(sentence, word) == expected_count
+    assert in_temp.word_count(sentence, word) == expected_count
     
