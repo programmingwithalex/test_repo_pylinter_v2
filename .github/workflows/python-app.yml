@@ -34,7 +34,7 @@ jobs:
       with:
         python-root: '.'
         flake8-flags: ''
-        mypy-flags: '--ignore-missing-imports'
+        mypy-flags: '--ignore-missing-imports, --no-namespace-packages'
         fail-on-isort: false
         skip-flake8: true
 
