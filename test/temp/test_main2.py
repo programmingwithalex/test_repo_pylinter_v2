@@ -1,14 +1,24 @@
 from temp import main2
+import pytest
 
 
-def test_sub():
-    assert main2.sub(3, 4) == -1
-    assert main2.sub(4.5, 4) == 0
-    assert main2.sub(3.9, 4) == -1
-    assert main2.sub(4.2, 3.8) == 0
+@pytest.mark.parametrize('x, y, expected',
+    [
+        (3, 4, -1),
+        (4.5, 4, 0),
+        (3.9, 4, -1),
+        (4.2, 3.9, 0)
+    ])
+def test_sub_parametrize(x, y, expected):
+    assert main2.sub(x, y) == expected
 
 
-def test_word_count():
-    assert main2.word_count('arm pod race', 'pod') == 1
-    assert main2.word_count('arm pod race', 'lap') == 0
-    assert main2.word_count('arm arm arm', 'arm') == 3
+@pytest.mark.parametrize('sentence, word, expected_count',
+    [
+        ('arm pod race', 'pod', 1),
+        ('arm pod race', 'lap', 0),
+        ('arm arm arm', 'arm', 3),
+    ])
+def test_word_count(sentence, word, expected_count):
+    assert main2.word_count(sentence, word) == expected_count
+    
