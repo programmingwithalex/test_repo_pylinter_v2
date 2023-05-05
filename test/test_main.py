@@ -3,6 +3,10 @@ import pytest
 import main
 
 
+def test_add_fail():
+    assert main.add(5, 5) == 100
+
+
 def test_add():
     assert main.add(3, 4) == 7
     assert main.add(3.5, 4) == 7
